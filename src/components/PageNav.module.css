@@ -1,0 +1,70 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1315px) {
+  .nav {
+    padding: 0 4%;
+    transition: 0.3s;
+  }
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 940px) {
+  .nav ul {
+    position: absolute;
+    top: 10rem;
+    right: -100%;
+    width: 300px;
+    padding: 40px;
+    background-color: #16061d;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.42s;
+  }
+
+  /* dosnt work need to fix*/
+  .nav.open ul {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.nav a:link,
+.nav a:visited {
+  color: #b86948;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  color: #ff3000;
+}
+
+.nav a:global(.active) {
+  color: #ff3000;
+}
+
+.burgerIcon {
+  font-size: 35px;
+  color: #b86948;
+  z-index: 1001;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  .burgerIcon {
+    display: block;
+  }
+}

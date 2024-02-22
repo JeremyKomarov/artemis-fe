@@ -1,0 +1,36 @@
+.main {
+  width: 100%;
+  height: 100vh -5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mainImgContainer img {
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+}
+
+.arrowContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 12%;
+  bottom: 40px;
+}
+
+.arrowContainer a {
+  color: #ebf0ff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.arrowContainer a span i {
+  color: #ebf0ff;
+  border: 2px solid #ebf0ff;
+  padding: 3px 3px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
