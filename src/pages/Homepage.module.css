@@ -1,5 +1,5 @@
 .homepage {
-  background-image: url(./bg2.png);
+  background-image: url('/bg2.png');
   background-position: center;
   background-size: cover;
   height: calc(100vh);
