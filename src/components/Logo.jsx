@@ -5,7 +5,7 @@ function Logo() {
   return (
     <Link to="/">
       <img
-        src="/logo.png"
+        src="./logo.png"
         alt="Artemis Logo"
         className={styles.logo}
       />
