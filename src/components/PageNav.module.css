@@ -28,7 +28,7 @@
     background-color: #16061d;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     transition: all 0.42s;
   }
