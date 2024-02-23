@@ -19,19 +19,16 @@ function PageNav() {
         <Logo />
         <ul>
           <li>
-            <NavLink to="/">צור קשר</NavLink>
+            <NavLink to="/contact-us">צור קשר</NavLink>
           </li>
           <li>
-            <NavLink to="/test">המוקד</NavLink>
+            <NavLink to="/vision">חזון החברה</NavLink>
           </li>
           <li>
-            <NavLink to="/test">סוגי הבטחה</NavLink>
+            <NavLink to="/activities">תחומי עיסוק</NavLink>
           </li>
           <li>
-            <NavLink to="/test">אודות</NavLink>
-          </li>
-          <li>
-            <NavLink to="/test">בית</NavLink>
+            <NavLink to="/">בית</NavLink>
           </li>
         </ul>
         <div
