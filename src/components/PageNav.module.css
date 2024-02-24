@@ -21,13 +21,13 @@
 @media screen and (max-width: 940px) {
   .nav ul {
     position: absolute;
+    right: 0;
     top: 10rem;
-    right: -100%;
     width: 300px;
     padding: 40px;
     background-color: #16061d;
     border-radius: 10px;
-    display: flex;
+    display: none;
     flex-direction: column-reverse;
     align-items: center;
     transition: all 0.42s;
@@ -35,8 +35,8 @@
 
   /* dosnt work need to fix*/
   .nav.open ul {
-    position: absolute;
-    right: 0;
+    display: flex;
+    transition: all 0.42s;
   }
 }
 

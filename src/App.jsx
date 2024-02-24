@@ -2,7 +2,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import Activities from './pages/Activities';
 import Vision from './pages/Vision';
-import ContactUs from './pages/ContactUs';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
           <Route index element={<Homepage />} />
           <Route path="activities" element={<Activities />} />
           <Route path="vision" element={<Vision />} />
-          <Route path="contact-us" element={<ContactUs />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </>
