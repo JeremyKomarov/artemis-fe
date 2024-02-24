@@ -19,7 +19,7 @@ function PageNav() {
         <Logo />
         <ul>
           <li>
-            <NavLink to="/contact-us">צור קשר</NavLink>
+            <NavLink to="/contact">צור קשר</NavLink>
           </li>
           <li>
             <NavLink to="/vision">חזון החברה</NavLink>

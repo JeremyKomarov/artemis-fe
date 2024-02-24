@@ -1,0 +1,31 @@
+/*
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  direction: rtl;
+}
+
+.tab h2 {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+.tab p {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+}
+
+*/
+
+.tab {
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.42s;
+  width: 330px;
+}

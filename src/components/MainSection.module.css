@@ -9,6 +9,13 @@
   max-width: 100%;
   width: 800px;
   height: auto;
+  transition: all 0.42s;
+}
+
+@media screen and (max-width: 940px) {
+  .mainImgContainer img {
+    margin-top: 15rem;
+  }
 }
 
 .arrowContainer {
