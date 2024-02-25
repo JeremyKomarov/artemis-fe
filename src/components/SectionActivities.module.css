@@ -1,0 +1,27 @@
+.sectionContainer {
+  max-width: 120rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.tabContainer {
+  width: 70%;
+  margin: 0 auto 3rem auto;
+}
+@media (max-width: 940px) {
+  .tabContainer {
+    width: 100%;
+  }
+}
+
+.tabFilterContainer {
+  padding: 2rem;
+  text-align: center;
+  background: hsl(205.71, 30.43%, 95.49%);
+}
+
+.tabFilterItemContainer {
+  background: white;
+  margin: 0 auto;
+  position: relative;
+}

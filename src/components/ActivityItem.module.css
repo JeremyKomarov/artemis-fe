@@ -1,0 +1,19 @@
+.tabItem {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0rem 3rem;
+  background: hsl(0, 0%, 99%);
+  display: none; /* Hide all tab items by default */
+}
+
+.selectedTab {
+  display: block; /* Display selected tab item */
+}
+
+.tabContentRight h1 {
+  padding: 2rem 0;
+  font-size: 3rem;
+}
