@@ -10,9 +10,6 @@ function PageNav() {
     setIsOpen(!isOpen);
   };
 
-  const menuIconClasses = `${isOpen ? 'open' : ''}`;
-  console.log(menuIconClasses);
-
   return (
     <header>
       <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
@@ -20,6 +17,9 @@ function PageNav() {
         <ul>
           <li>
             <NavLink to="/contact">צור קשר</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about-us">מי אנחנו</NavLink>
           </li>
           <li>
             <NavLink to="/vision">חזון החברה</NavLink>

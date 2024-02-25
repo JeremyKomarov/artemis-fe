@@ -1,15 +1,12 @@
 import PageNav from '../components/PageNav';
-import Section from '../components/Section';
-import Tabs from '../components/Tabs';
+import SectionActivities from '../components/SectionActivities';
 import styles from './Activities.module.css';
 
 function Activities() {
   return (
     <main className={styles.activities}>
       <PageNav />
-      <Section>
-        <Tabs />
-      </Section>
+      <SectionActivities />
     </main>
   );
 }

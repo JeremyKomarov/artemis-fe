@@ -1,0 +1,53 @@
+.inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.inputBox input,
+.inputBox textarea {
+  border-radius: 3px;
+  width: 100%;
+  padding: 10px 2px;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+  transition: border-color 0.3s ease;
+  background: #fdfdfd60;
+}
+
+.inputBox input:focus,
+.inputBox textarea:focus {
+  border-color: #ffffff;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.inputBox input[type='submit'] {
+  width: 120px;
+  background: #b86a486e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 18px;
+  transition: background 0.3s ease, transform 0.3s;
+}
+
+.inputBox input[type='submit']:hover {
+  background: #ff2f0033;
+  transform: translateY(-2px);
+}

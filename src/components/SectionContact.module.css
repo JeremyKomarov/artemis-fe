@@ -1,4 +1,4 @@
-.contact {
+.sectionContact {
   position: relative;
   min-height: 100vh;
   padding: 50px 100px;
@@ -7,18 +7,18 @@
   align-items: center;
 }
 
-.content {
+.container {
   max-width: 800px;
   text-align: center;
 }
 
-.content h2 {
+.container h2 {
   font-size: 36px;
   font-weight: 500;
   color: #fff;
 }
 
-.container {
+.content {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -33,44 +33,12 @@
   margin-right: 20px;
 }
 
-.box {
-  position: relative;
-  padding: 20px 0;
-  display: flex;
-  width: 275px;
-}
-
-.icon {
-  min-width: 60px;
-  height: 60px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  font-size: 22px;
-}
-
-.text {
-  display: flex;
-  margin-left: 20px;
-  font-size: 16px;
-  color: #fff;
-  flex-direction: column;
-  width: 100%;
-}
-
-.text h3 {
-  font-weight: 500;
-  color: #00bcd4;
-}
-
 @media screen and (max-width: 940px) {
   .contact {
     padding: 50px;
   }
 
-  .container {
+  .content {
     flex-direction: column;
     align-items: normal;
   }
