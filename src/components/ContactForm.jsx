@@ -53,38 +53,32 @@ function ContactForm() {
         <h2>צור קשר</h2>
       </div>
       <div className={styles.formGroup}>
-        <label htmlFor="user_name" className={styles.formLabel}>שם</label>
         <input
           type='text'
           className={styles.formInput}
           placeholder='שם'
           name='user_name'
-          id='user_name'
           value={formData.user_name}
           onChange={handleChange}
           required
         />
       </div>
       <div className={styles.formGroup}>
-        <label htmlFor="user_email" className={styles.formLabel}>מייל</label>
         <input
           type='email'
           className={styles.formInput}
           placeholder='מייל'
           name='user_email'
-          id='user_email'
           value={formData.user_email}
           onChange={handleChange}
           required
         />
       </div>
       <div className={styles.formGroup}>
-        <label htmlFor="user_message" className={styles.formLabel}>הודעה</label>
         <textarea
           className={styles.formInput}
           placeholder='הודעה'
           name='user_message'
-          id='user_message'
           value={formData.user_message}
           onChange={handleChange}
           required

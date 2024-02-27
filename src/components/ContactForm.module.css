@@ -4,6 +4,7 @@
 
 .contactForm div {
   margin-bottom: 4rem;
+  display: flex;
 }
 
 .contactForm div h2 {
@@ -46,17 +47,10 @@
   transition: all .3s;
 }
 
-.formLabel {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-left: 2rem;
-  margin-top: 0.7rem;
-  display: block;
-  transition: all .3s;
-}
-
 @media screen and (max-width: 940px) {
   .contactForm div {
     margin-bottom: 3rem;
+    justify-content: center;
+
   }
 }
