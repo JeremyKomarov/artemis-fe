@@ -1,59 +1,99 @@
+import { useRef, useState } from 'react';
 import styles from './ContactForm.module.css';
-import InputBox from './InputBox';
-import {useState} from 'react';
+import emailjs from "@emailjs/browser";
+
 
 function ContactForm() {
+  const form = useRef();
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    message: '',
+    user_name: '',
+    user_email: '',
+    user_message: ''
   });
 
-  const handleChange = e => {
-    const {name, value} = e.target;
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_bkftw0w', 'template_oir5bgq', form.current, {
+        publicKey: 'NkuHjxZeY7Do7DrYK',
+      })
+      .then(
+        (result) => {
+          console.log(result);
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+      e.target.reset();
+    };
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value,
+      [id]: value
     });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
+    setFormData({
+      user_name: '',
+      user_email: '',
+      user_message: ''
+    });
+    sendEmail(e)
   };
 
   return (
-    <div className={styles.contactForm}>
-      <form onSubmit={handleSubmit}>
-        <h2>Send Message</h2>
-        <InputBox
-          kind="input"
-          type="text"
-          name="fullName"
-          value={formData.fullName}
+    <form ref={form} className={styles.contactForm} onSubmit={handleSubmit}>
+      <div>
+        <h2>צור קשר</h2>
+      </div>
+      <div className={styles.formGroup}>
+        <label htmlFor="user_name" className={styles.formLabel}>שם</label>
+        <input
+          type='text'
+          className={styles.formInput}
+          placeholder='שם'
+          name='user_name'
+          id='user_name'
+          value={formData.user_name}
           onChange={handleChange}
-          label="Full Name"
           required
         />
-        <InputBox
-          kind="input"
-          type="email"
-          name="email"
-          value={formData.email}
+      </div>
+      <div className={styles.formGroup}>
+        <label htmlFor="user_email" className={styles.formLabel}>מייל</label>
+        <input
+          type='email'
+          className={styles.formInput}
+          placeholder='מייל'
+          name='user_email'
+          id='user_email'
+          value={formData.user_email}
           onChange={handleChange}
-          label="Email"
           required
         />
-        <InputBox
-          kind="textarea"
-          name="message"
-          value={formData.message}
+      </div>
+      <div className={styles.formGroup}>
+        <label htmlFor="user_message" className={styles.formLabel}>הודעה</label>
+        <textarea
+          className={styles.formInput}
+          placeholder='הודעה'
+          name='user_message'
+          id='user_message'
+          value={formData.user_message}
           onChange={handleChange}
-          label="Message"
           required
         />
-        <InputBox kind="input" type="submit" value="Send" />
-      </form>
-    </div>
+      </div>
+      <div className={styles.formGroup}>
+        <button type="submit">צור קשר</button>
+      </div>
+    </form>
   );
 }
 

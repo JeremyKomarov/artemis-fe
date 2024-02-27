@@ -1,7 +1,24 @@
-.vision {
+/* .vision {
   background-image: url('/bg2.png');
   background-position: center;
   background-size: cover;
   height: calc(100vh);
   padding: 2.5rem 5rem;
+} */
+
+.vision {
+  padding: 2.5rem 5rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(13,0,32, 0.8),
+      rgba(88,37,16, 0.8)),
+      url(./2.jpeg);
+  background-size: cover;
+  height: calc(100vh);
+  /* transform: skewY(-7deg); */
+  /* margin-top: -10rem; */
+}
+
+.vision > * {
+  /* transform: skewY(7deg); */
 }

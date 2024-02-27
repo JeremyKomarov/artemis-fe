@@ -6,14 +6,14 @@ function MainSection() {
       <div className={styles.mainImgContainer}>
         <img src="./full-logo.png" alt="Artemis Full Logo" />
       </div>
-      <div className={styles.arrowContainer}>
+      {/* <div className={styles.arrowContainer}>
         <a href="#">
           Scroll Down
           <span>
             <i className="bx bx-down-arrow-alt"></i>
           </span>
         </a>
-      </div>
+      </div> */}
     </section>
   );
 }
