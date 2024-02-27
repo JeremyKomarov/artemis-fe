@@ -1,17 +1,62 @@
 .contactForm {
-  padding: 40px;
-  background: #fdfdfd60;
-  transition: background 0.3s ease;
-  border-radius: 3px;
+  display: block;
 }
 
-.contactForm:hover {
-  background: #f9f9f97a;
+.contactForm div {
+  margin-bottom: 4rem;
 }
 
-.contactForm form h2 {
-  font-size: 30px;
-  color: #333;
-  font-weight: 500;
-  margin-bottom: 20px;
+.contactForm div h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: .1rem;
+}
+
+.formGroup:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.formGroup textarea {
+  resize: none;
+}
+
+.formGroup button {
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(88,37,16, 0.8);
+}
+
+.formInput {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all .3s;
+}
+
+.formLabel {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all .3s;
+}
+
+@media screen and (max-width: 940px) {
+  .contactForm div {
+    margin-bottom: 3rem;
+  }
 }

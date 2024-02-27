@@ -1,0 +1,39 @@
+.container {
+  opacity: 0.8;
+  margin: 4rem auto 0 auto;
+  max-width: 114rem;
+  background-image: linear-gradient(
+    105deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.9) 50%,
+    transparent 50%),
+    url(./1.jpeg);
+    background-position: center 90%;
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.2);
+}
+
+.formContainer {
+  width: 50%;
+  padding: 1rem 6rem;
+}
+
+@media screen and (max-width: 940px) {
+  .container {
+    max-width: 50rem;
+    padding: 0 3rem;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 100%),
+      url(./1.jpeg);
+      background-size: cover;
+      background-position: center 0;
+  }
+
+  .formContainer {
+    width: 100%;
+  }
+}
+
