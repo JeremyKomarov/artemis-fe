@@ -18,3 +18,11 @@
   font-weight: 700;
   margin-bottom: 1.5rem
 }
+
+@media screen and (max-width: 940px) {
+  .activityBox {
+    margin-bottom: 6rem;
+    width: 100%;
+    padding: 2rem;
+  }
+}

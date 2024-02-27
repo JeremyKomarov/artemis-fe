@@ -5,3 +5,11 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2.5rem;
 }
+
+@media screen and (max-width: 940px) {
+  .container {
+    max-width: 50rem;
+    grid-template-columns: 1fr;
+    padding: 0 3rem;
+  }
+}

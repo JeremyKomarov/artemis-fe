@@ -31,12 +31,13 @@
     flex-direction: column-reverse;
     align-items: center;
     transition: all 0.42s;
+    z-index: 1000;
   }
 
-  /* dosnt work need to fix*/
   .nav.open ul {
     display: flex;
     transition: all 0.42s;
+    z-index: 1000;
   }
 }
 
