@@ -13,7 +13,6 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.2);
     transition: all .3s;
-
 }
 
 .formContainer {
@@ -24,7 +23,7 @@
 @media screen and (max-width: 940px) {
   .container {
     max-width: 50rem;
-    padding: 0 3rem;
+    padding: 0 1rem;
     background-image: linear-gradient(
       to right,
       rgba(255, 255, 255, 0.9) 0%,
@@ -36,6 +35,6 @@
 
   .formContainer {
     width: 100%;
+    padding: 1rem;
   }
 }
-

@@ -22,3 +22,9 @@
 .aboutUs > * {
   /* transform: skewY(7deg); */
 }
+
+@media screen and (max-width: 940px) {
+  .aboutUs {
+    height: auto;
+  }
+}

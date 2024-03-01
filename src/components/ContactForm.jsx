@@ -20,32 +20,34 @@ function ContactForm() {
       })
       .then(
         (result) => {
-          console.log(result);
+          console.log(result.text);
         },
         (error) => {
           console.log('FAILED...', error.text);
-        },
-      );
-      e.target.reset();
+        }
+      )
+      .finally(() => {
+        form.current.reset();
+        setFormData({
+          user_name: '',
+          user_email: '',
+          user_message: ''
+        });
+      });
+  };
+
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData({
+        ...formData,
+        [name]: value
+      });
     };
-
-  const handleChange = (e) => {
-    const { id, value } = e.target;
-    setFormData({
-      ...formData,
-      [id]: value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormData({
-      user_name: '',
-      user_email: '',
-      user_message: ''
-    });
-    sendEmail(e)
-  };
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      sendEmail(e);
+    };
 
   return (
     <form ref={form} className={styles.contactForm} onSubmit={handleSubmit}>

@@ -8,6 +8,9 @@
 }
 
 .contactForm div h2 {
+  background-image: linear-gradient(to right, #b86948, #ff3000);
+  background-clip: text;
+  color: transparent;
   font-size: 3.2rem;
   font-weight: 700;
   display: inline-block;
