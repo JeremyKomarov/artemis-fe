@@ -21,8 +21,16 @@
 
 @media screen and (max-width: 940px) {
   .activityBox {
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
     width: 100%;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .activityBox {
+    width: 100%;
+    height: 300px;
     padding: 2rem;
   }
 }

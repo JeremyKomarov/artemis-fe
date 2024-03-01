@@ -21,9 +21,9 @@ function PageNav() {
           <li>
             <NavLink to="/about-us">מי אנחנו</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/vision">חזון החברה</NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/activities">תחומי עיסוק</NavLink>
           </li>

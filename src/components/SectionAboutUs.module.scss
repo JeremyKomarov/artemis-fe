@@ -1,0 +1,67 @@
+.container {
+  max-width: 114rem;
+  margin: 10rem auto 0 auto;
+
+  .titleRow {
+    margin-bottom: 4rem;
+    text-align: center;
+
+    h1 {
+      background-image: linear-gradient(to right, #b86948, #ff3000);
+      background-clip: text;
+      color: transparent;
+      font-size: 6rem;
+      font-weight: 700;
+      display: inline-block;
+      letter-spacing: .2rem;
+      transition: all .2s;
+    }
+
+    h2 {
+      background-image: linear-gradient(to right, #b86948, #ff3000);
+      background-clip: text;
+      color: transparent;
+      font-size: 3.5rem;
+      font-weight: 700;
+      display: inline-block;
+      letter-spacing: .2rem;
+      transition: all .2s;
+    }
+  }
+
+  .row {
+    max-width: 114rem;
+    margin: 0 auto 8rem auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    direction: rtl;
+    text-align: center;
+    box-shadow: 0 3rem 6rem rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,0.4);
+    padding: 4rem;
+    gap: 2rem;
+
+    p {
+      font-size: 3rem;
+      font-weight: 500;
+    }
+  }
+
+  .cardsRow {
+    max-width: 114rem;
+    margin: 0 auto 8rem auto;
+    display: flex;
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 1315px) {
+  .container {
+    max-width: 75rem;
+
+    .cardsRow{
+      flex-direction: column;
+    }
+  }
+}
