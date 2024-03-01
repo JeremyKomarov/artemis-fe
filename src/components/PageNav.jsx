@@ -18,9 +18,9 @@ function PageNav() {
           <li>
             <NavLink to="/contact">צור קשר</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/about-us">מי אנחנו</NavLink>
-          </li>
+          </li> */}
           {/* <li>
             <NavLink to="/vision">חזון החברה</NavLink>
           </li> */}
