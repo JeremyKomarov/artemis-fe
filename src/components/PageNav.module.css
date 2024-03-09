@@ -16,6 +16,7 @@
   align-items: center;
   gap: 4rem;
   font-size: 2rem;
+  list-style: none;
 }
 
 @media screen and (max-width: 940px) {

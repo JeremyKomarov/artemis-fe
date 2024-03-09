@@ -25,6 +25,9 @@ function PageNav() {
             <NavLink to="/vision">חזון החברה</NavLink>
           </li> */}
           <li>
+            <NavLink to="/safety">בטיחות</NavLink>
+          </li>
+          <li>
             <NavLink to="/activities">תחומי עיסוק</NavLink>
           </li>
           <li>

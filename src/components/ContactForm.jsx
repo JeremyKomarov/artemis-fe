@@ -1,9 +1,15 @@
+/* eslint-disable no-undef */
 import { useRef, useState } from 'react';
 import styles from './ContactForm.module.css';
 import emailjs from "@emailjs/browser";
 
+const SERVICE_ID = import.meta.env.EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.EMAILJS_PUBLIC_KEY;
+
 
 function ContactForm() {
+  console.log(import.meta.env.EMAILJS_SERVICE_ID);
   const form = useRef();
   const [formData, setFormData] = useState({
     user_name: '',
@@ -15,8 +21,8 @@ function ContactForm() {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_bkftw0w', 'template_oir5bgq', form.current, {
-        publicKey: 'NkuHjxZeY7Do7DrYK',
+      .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
+        publicKey: PUBLIC_KEY,
       })
       .then(
         (result) => {
